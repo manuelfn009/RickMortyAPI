@@ -71,9 +71,12 @@ function createCharacterCard(character) {
     "p-3",
     "text-white",
     "rounded-3",
-    "cursor-pointer"
+    "cursor-pointer",
+    "border",
+    "border-light",
+    "border-3"
   );
-
+  
 
   let star = document.createElement("i");
   star.classList.add("fas", "fa-solid", "fa-star", "fs-1", "star");

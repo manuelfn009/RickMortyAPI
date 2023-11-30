@@ -1,16 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Ubuntu&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Architects Daughter', cursive;
 }
 
-.card{
+.card {
     width: 350px;
     height: 650px;
 }
 
-.star:hover{
+.star:hover {
     cursor: pointer;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(27, 26, 26);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #40B5CB;
+    border-radius: 20px;
+    border: 2px solid #C0DF40;
+}
+
+.btn {
+    background-color: #40B5CB;
+    border: 3px solid #C0DF40;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #C0DF40;
+    border: 3px solid #40B5CB;
+}
+
+.select {
+    background-color: #40B5CB;
+    border: 3px solid #C0DF40;
+    color: white;
 }
