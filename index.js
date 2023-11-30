@@ -98,6 +98,14 @@ function createCharacterCard(character) {
   species.innerHTML = `<strong>Species: </strong> ${character.species}`;
   ul.appendChild(species);
 
+  let type = document.createElement("li");
+  if (character.type) {
+    type.innerHTML = `<strong>Type: </strong> ${character.type}`;
+  } else {
+    type.innerHTML = `<strong>Type: </strong> Unknown`;
+  }
+  ul.appendChild(type);
+
   let status = document.createElement("li");
   status.innerHTML = `<strong>Status: </strong> ${character.status}`;
   ul.appendChild(status);
@@ -131,7 +139,7 @@ function createCharacterCard(character) {
 
 async function getSpecie() {
   selectSpecies.innerHTML =
-    "<option value='' disabled selected>Select a specie</option>";
+    "<option value='' selected>All</option>";
 
   const uniqueSpecies = new Set();
 
