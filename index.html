@@ -9,25 +9,39 @@
     <script src="index.js" defer></script>
     <link rel="icon" href="src/img/logoRM.png">
     <link rel="stylesheet" href="style.css">
-    <title>Rick & Morty</title>
+    <title>Rick and Morty</title>
 
 </head>
 <body class="bg-black h-100 w-100 d-flex justify-content-center align-items-center flex-column ">
-    <img src="src/img/logoName.png" alt="logo" class="w-50 h-25">
+  
+        <img src="src/img/logoName.png" alt="logo" class="w-50 h-25">
+
+    
     <h1 class="text-white">Characters</h1>
     <div class="d-flex">
-    <select name="select" id="select" class="select me-3 rounded-2">
-        <option value="">All</option>   
-        <option value="&status=alive">Alive</option>
-        <option value="&status=dead">Dead</option>
-        <option value="&status=unknown">Unknown</option>
-    </select>
-    <select name="select" id="selectSpecies" class="select me-3 rounded-2 ">
-    </select>
-    <button class="btn " id="buttonFavorites">Favorites</button>
+        <div class="d-flex flex-column ">
+            <h3 class="text-white"><strong>Status</strong> </h3>
+            <select name="select" id="select" class="select me-3 rounded-2">
+                <option value="">All</option>   
+                <option value="&status=alive">Alive</option>
+                <option value="&status=dead">Dead</option>
+                <option value="&status=unknown">Unknown</option>
+            </select>
+        </div>
+        <div class="d-flex flex-column">
+            <h3 class="text-white text-center"><strong>Species</strong></h3>
+            <select name="select" id="selectSpecies" class="select me-3 rounded-2 ">
+            </select>
+        </div>
+        <div class="d-flex flex-column my-4 py-1">   
+            <button class="btn p-2" id="buttonFavorites">Favorites</button>
+        </div>
+    
+    
+    
 </div>
-    <input type="text" id="search" class="border border-white text-bg-dark rounded-2 w-50 m-3 p-2" placeholder ="Search by name">
-    <button class="btn" id="buttonSearch">Search</button>
+    <!-- <input type="text" id="search" class="border border-white text-bg-dark rounded-2 w-50 m-3 p-2" placeholder ="Search by name">
+    <button class="btn" id="buttonSearch">Search</button> -->
     <div class="container w-100 mt-5 h-100 d-flex  flex-wrap justify-content-center"></div>
 </body>
 </html>
